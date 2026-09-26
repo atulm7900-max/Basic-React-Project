@@ -17,8 +17,13 @@ export default function Product({ title, idx }) {
     ["wireless", "optical orientation"],
   ];
 
+  function handleOnClick(event) {
+    console.log("HoverOver The Card");
+    console.log(event);
+  }
+
   return (
-    <div style={styles}>
+    <div style={styles} onClick={handleOnClick}>
       <h3>{title}</h3>
       <p>{features[idx][0]}</p>
       <p>{features[idx][1]}</p>

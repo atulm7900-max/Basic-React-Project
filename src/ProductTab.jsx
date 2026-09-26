@@ -3,6 +3,7 @@ import Product from "./Product";
 function ProductTab() {
   let styles = {
     display: "flex",
+    flexWrap: "wrap",
   };
   return (
     <div style={styles}>
